@@ -1,0 +1,30 @@
+/* 3.4 offer Section  */
+.offer-item {
+    float: left;
+    width: 30%;
+    padding: 20px 20px 20px 70px;
+    border: 1px solid var(--bg-gray);
+    
+    position: relative;
+    }
+    .offer-item.mg{
+        margin: 0 5%;
+    }
+    .offer-icon{
+        position: absolute;
+        top: 20px;
+        left: 15px;
+        color: var(--lightblue-color);
+    }
+    .offer-item-title {
+    text-transform: capitalize;
+    position: relative;
+    }
+    .offer-item:hover .offer-item-title {
+        color: var(--color-white);;
+        transition: var(--transition);
+    }
+    .offer-item-desc {
+    color:var(--color-font);
+    }
+    

@@ -1,0 +1,133 @@
+/* Contents of this template */
+    /* 
+    1. Common
+    2. General Css styles
+    3. Sections Styles
+        3.0 Header Section 
+        3.1 Home Section 
+        3.2 About Section 
+        3.3 Portfolio Section 
+        3.4 Services Section 
+        3.5 Prices Section 
+        3.6 Team Section 
+        3.7 Blog page
+        3.8 Content Section 
+        3.9 Section Footer
+    */
+
+
+/* 1- Common */
+/*
+    - overlay
+    - opacity hover
+    - section header
+    - section padding
+    - hover effect 1 ( left to right )
+    - hover effect 2 ( top to bottom )
+
+*/
+.overlay {
+    content: "";
+    position: absolute;
+    width:100%;
+    height:100%;
+    left: 0;
+    top:0;
+    background-color: rgba(0, 0, 0, 0.6)
+}
+.hover-opacity {
+    transition: var(--transition);
+}
+.hover-opacity:hover {
+    opacity: 0.8;
+}
+.ltr-effect, 
+.tb-effect {
+position: relative;
+}
+.ltr-effect:after, .tb-effect:after {
+position:absolute;
+content:"";
+top:0;
+left:0;
+right:0;
+bottom: 0;
+background-color: var(--color-black);
+z-index: -1;
+}
+.ltr-effect::after {
+    width:0%;
+    transition: width var(--transition);
+    }
+.tb-effect::after {
+        height: 0;
+        transition: var(--transition);
+    }
+.ltr-effect:hover::after {
+        width: 100%;
+    }
+.tb-effect:hover::after {
+    height: 100%;
+}
+/* 2. General Css styles */
+:root {
+    --color-black:  #1c1d21;
+    --lightblue-color: #6195ff;
+    --color-blue-hover: #3173f8;
+    --color-font: #888;
+    --bg-gray: #eee;
+    --color-white: #fff;
+    --transition: 0.5s;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Varela Round', sans-serif; 
+}
+.container {
+    width: 80%;
+    margin: auto;
+}
+a {
+    text-decoration:none;
+}
+.clear {
+    clear:both;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: montserrat, sans-serif ;
+}
+button {
+    font-family: inherit;
+}
+ul {
+    list-style: none;
+}
+
+.section-header {
+text-align: center;
+}
+.section-header .section-title {
+    text-transform: capitalize;
+    font-size: 35px;
+}
+.section-header .line {
+    display: block;
+    width: 60PX;
+    height: 4px;
+    background-color: var(--lightblue-color);
+    margin: 10px auto 70px;
+}
+.padding-y {
+    padding: 100px 0;
+}
+.m-b {
+    margin-bottom: 10px;
+}
+/* 3. Sections Styles */
+

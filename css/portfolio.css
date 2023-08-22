@@ -1,0 +1,76 @@
+/* 3.3 Portfolio Section  */
+.portfolio {
+    background-color: var(--bg-gray);
+}
+.portfolio-item {
+    float: left;
+    width: 32%;
+    position: relative;
+    padding: 10px;
+}
+.portfolio-item img {
+    width:100%;
+}
+.portfolio-item.mg {
+    margin: 0 2%;
+}
+.portfolio-item .portfolio-layer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility:hidden;
+    transition: var(--transition);
+}
+.portfolio-item:hover .portfolio-layer {
+    opacity: 1;
+    visibility: visible;
+}
+.portfolio-layer-info {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 80%;
+    text-align:center;
+}
+.portfolio-layer-info .category {
+    color: var(--lightblue-color);
+    text-transform: uppercase;
+    font-size: 17px;
+    display: block;
+    position:relative;
+    top: 10px;
+    transition:top var(--transition), opacity var(--transition);
+    transition-delay: 0;
+    opacity:0; 
+}
+.portfolio-layer-title {
+    color: var(--color-white);;
+    font-size: 20px;
+    position:relative;
+    top: 10px;
+    transition:top var(--transition), opacity var(--transition);
+    transition-delay: .2s;
+    opacity:0; 
+      
+}
+.icon-portfolio {
+background-color: var(--lightblue-color);
+color:var(--color-white);;
+padding: 10px;
+position:relative;
+top: 10px;
+transition:opacity var(--transition), top var(--transition);
+transition-delay: .3s;
+opacity:0;
+}
+.portfolio-item:hover .portfolio-layer-info .category ,
+.portfolio-item:hover .portfolio-layer-title,
+.portfolio-item:hover  .icon-portfolio {
+    top:0;
+    opacity: 1;
+}

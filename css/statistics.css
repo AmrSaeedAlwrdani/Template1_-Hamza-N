@@ -1,0 +1,33 @@
+/* 3.6 statistics Section  */
+.statistics {
+    position:relative;
+    background-image: url("../Images/Background/background2.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    height: 300px;
+}
+.statis-content {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  
+    width:100%;
+}
+ .statis-item {
+    float: left;
+    width: 25%;
+    text-align:center;
+
+}
+.statis-item .icon {
+    color: var(--lightblue-color);
+   
+}
+.statis-item-title {
+    color: var(--color-white);;
+    font-size: 2rem;
+}
+.statis-item-text {
+    color: var(--color-white);;
+}

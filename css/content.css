@@ -1,0 +1,56 @@
+/* 3.10 Content Section  */
+.content-item {
+    float: left;
+    width: 30%;
+    text-align: center;
+}
+.content-item .icon {
+    color: var(--lightblue-color);
+    margin-bottom: 15px;
+}
+.content-item-text {
+text-transform: capitalize;
+margin-bottom: 15px;
+}
+.content-item-info {
+color: #999;
+}
+.content-input input, .content-item-mesage {
+    display: inline-block;
+    padding: 20px;
+    border:none;
+    background:var(--bg-gray);
+    margin-bottom: 20px;
+    outline: none;
+    font-size:16px;
+}
+.content-item-name {
+width: 44%;
+margin-right: 2%;
+}
+.content-item-email {
+    width: 44%;
+}
+.content-item-subject {
+    width: 90%;
+}
+.content-item-mesage {
+    width: 90%;
+}
+.btn-send-message {
+    background-color: var(--lightblue-color);
+    color: var(--color-white);;
+    padding: 10px;
+    border: none;
+    margin: auto;
+    display: block;
+    text-transform: capitalize;
+    font-size: 17px;
+    width: 170px;
+    cursor:pointer;
+    transition:var(--transition);
+}
+.btn-send-message:hover {
+    background-color:var(--color-blue-hover);
+}
+

@@ -1,0 +1,30 @@
+/* 3.2 About Section  */
+.about-content{
+    float: left;
+    width:30%;
+    border:1px solid var(--bg-gray);
+    text-align: center;
+    padding: 30px 15px;
+    }
+    .about-content.mg{
+        margin: 0 5%;
+    }
+    .about-icont {
+        color: var(--lightblue-color);
+    
+    }
+    .about-content-title {
+    text-transform: capitalize;
+    transition:var(--transition)
+    
+    }
+    .about-content:hover .about-content-title {
+     color:var(--color-white);;
+    }
+    
+    .about-content-desc {
+    color:var(--color-font);
+    }
+    .about-content a {
+    color: var(--lightblue-color);
+    }
